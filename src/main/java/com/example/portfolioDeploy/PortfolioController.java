@@ -6,10 +6,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/")
+@RequestMapping("/api/portfolio")
 public class PortfolioController {
 
-    @GetMapping("/portfolio")
+    @GetMapping("/get")
     public String getPortfolio(){
          return "Welcome to my website.";
     }
